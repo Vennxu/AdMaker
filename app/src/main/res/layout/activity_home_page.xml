@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ekuater.admaker.ui.widget.DetectTouchGestureLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gesture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/normal_title" />
+
+        <com.ekuater.admaker.ui.widget.SwipeRefreshLoadLayout
+            android:id="@+id/home_page_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_bar">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_page_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.ekuater.admaker.ui.widget.SwipeRefreshLoadLayout>
+
+
+    </RelativeLayout>
+</com.ekuater.admaker.ui.widget.DetectTouchGestureLayout>

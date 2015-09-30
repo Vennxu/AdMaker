@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hot_child_relayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/hot_child_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY" />
+        <com.ekuater.admaker.ui.widget.ClickEventInterceptLinear
+            android:id="@+id/image_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="3dp"
+            android:gravity="right"
+            android:background="@drawable/is_shadow_back"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/image_praise_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textSize="15sp"
+                android:layout_gravity="bottom"
+                android:textColor="@color/image_praise_color"
+                android:layout_marginRight="5dp"/>
+
+            <ImageView
+                android:id="@+id/image_praise_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom" />
+
+        </com.ekuater.admaker.ui.widget.ClickEventInterceptLinear>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

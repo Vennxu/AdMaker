@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp">
+
+    <com.ekuater.admaker.ui.widget.ClickEventInterceptLinear
+        android:id="@+id/operation_praise"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/operation_praise_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/community_num"
+            android:text="200" />
+
+        <ImageView
+            android:id="@+id/operation_praise_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_community_action"
+            android:src="@drawable/ic_like_normal" />
+
+    </com.ekuater.admaker.ui.widget.ClickEventInterceptLinear>
+
+    <com.ekuater.admaker.ui.widget.ClickEventInterceptLinear
+        android:id="@+id/operation_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/operation_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/community_num"
+            android:text="200" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_community_action"
+            android:src="@drawable/ic_comment_normal" />
+    </com.ekuater.admaker.ui.widget.ClickEventInterceptLinear>
+
+    q<com.ekuater.admaker.ui.widget.ClickEventInterceptLinear
+        android:id="@+id/operation_share"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--<TextView-->
+        <!--android:id="@+id/operation_share_num"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="200" />-->
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_community_action"
+            android:src="@drawable/ic_share_normal" />
+    </com.ekuater.admaker.ui.widget.ClickEventInterceptLinear>
+
+</LinearLayout>

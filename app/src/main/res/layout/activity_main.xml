@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.ekuater.admaker.ui.widget.PagerSlidingTabStrip
+            android:id="@+id/pager_tab"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/actionBarStyle"
+            app:pstsDividerColor="@color/transparent"
+            app:pstsIndicatorColor="@color/indicator_color"
+            app:pstsIndicatorHeight="2dp"
+            app:pstsShouldExpand="true"
+            app:pstsTabBackground="@color/transparent"
+            app:pstsTabPaddingLeftRight="0dp"
+            app:pstsTabSelectedTextStyle="bold"
+            app:pstsTabTextColor="@color/white"
+            app:pstsTabTextSize="14sp"
+            app:pstsTabTextStyle="normal"
+            app:pstsUnderlineColor="@color/divider"
+            app:pstsUnderlineHeight="1px" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pager_tab" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/drawer_left_menu"
+        android:name="com.ekuater.admaker.ui.fragment.MainDrawerMenuFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|left"
+        tools:layout="@layout/layout_left_menu" />
+</android.support.v4.widget.DrawerLayout>

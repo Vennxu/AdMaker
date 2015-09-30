@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+
+        <RadioGroup
+            android:id="@+id/effect_align"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/effect_left_align"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/align_left_radio_btn_background"
+                android:button="@null"
+                android:checked="true" />
+
+            <View style="@style/EffectRadioButtonLineStyle" />
+
+            <RadioButton
+                android:id="@+id/effect_center_align"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/align_center_radio_btn_background"
+                android:button="@null" />
+
+            <View style="@style/EffectRadioButtonLineStyle" />
+
+            <RadioButton
+                android:id="@+id/effect_right_align"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/align_right_radio_btn_background"
+                android:button="@null" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/font_color_line" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+
+        <RadioGroup
+            android:id="@+id/effect_select_orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/effect_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_typeface_horizontal_background"
+                android:button="@null"
+                android:checked="true" />
+
+            <View style="@style/EffectRadioButtonLineStyle" />
+
+            <RadioButton
+                android:id="@+id/effect_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_typeface_longitudinal_background"
+                android:button="@null" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/font_color_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/effect_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/effect_no_lumines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/effect_none_radio_btn_background"
+                android:button="@null" />
+
+            <View style="@style/EffectRadioButtonLineStyle" />
+
+            <RadioButton
+                android:id="@+id/effect_lumines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/effect_luminous_radio_btn_background"
+                android:button="@null" />
+
+            <View style="@style/EffectRadioButtonLineStyle" />
+
+            <RadioButton
+                android:id="@+id/effect_stroke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/effect_stroke_radio_btn_background"
+                android:button="@null"
+                android:checked="true"/>
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+    <RadioGroup
+        android:id="@+id/effect_select_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/effect_black_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/effect_color_radio_btn_background"
+            android:button="@null" />
+
+        <View style="@style/EffectRadioButtonLineStyle" />
+
+        <RadioButton
+            android:id="@+id/effect_white_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/effect_color_white_radio_btn_background"
+            android:button="@null"
+            android:checked="true" />
+    </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

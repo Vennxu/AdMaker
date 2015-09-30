@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ekuater.admaker.ui.widget.DetectTouchGestureLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gesture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ekuater.admaker.ui.widget.KeyboardStateView
+            android:id="@+id/keyboardstateview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/normal_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_bar"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <com.ekuater.admaker.ui.widget.SwipeRefreshLoadLayout
+                    android:id="@+id/descript_swipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/descript_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </com.ekuater.admaker.ui.widget.SwipeRefreshLoadLayout>
+
+                <RelativeLayout
+                    android:id="@+id/descript_click_cancle_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <include layout="@layout/comment_ui_input_bar" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</com.ekuater.admaker.ui.widget.DetectTouchGestureLayout>

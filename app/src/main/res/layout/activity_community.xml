@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/community_relayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/normal_title" />
+
+        <com.ekuater.admaker.ui.widget.SwipeRefreshLoadLayout
+            android:id="@+id/community_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_bar">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/comunity_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.ekuater.admaker.ui.widget.SwipeRefreshLoadLayout>
+
+    </RelativeLayout>
+</FrameLayout>

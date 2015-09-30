@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/comment_rippleview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    ripple:rv_color="@color/story_grey"
+    ripple:rv_type="rectangle"
+    ripple:rv_rippleDuration="100">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        card_view:cardBackgroundColor="@color/white">
+
+        <include layout="@layout/layout_community_item" />
+
+    </android.support.v7.widget.CardView>
+</com.andexert.library.RippleView>

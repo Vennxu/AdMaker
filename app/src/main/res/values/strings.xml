@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name" translatable="false">赞图</string>
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_contact_tip">请留下您的联系方式，方便我们答复您（可以是电话、QQ、微信或邮箱）</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="select_image">选择图片</string>
+    <string name="select_custom_image">选择商标图片</string>
+    <string name="select_background">选择场景</string>
+    <string name="feedback_hint">我想提的意见是&#8230;</string>
+    <string name="feedback_submit">提交</string>
+    <string name="feedback_message_empty">你的意见还没有写出来&#8230;</string>
+    <string name="feedback_submit_failure">提交失败</string>
+    <string name="feedback_success_prompt">谢谢您的意见，我们会及时给您反馈!</string>
+    <string name="saved">图片已保存</string>
+
+    <string name="report">举报</string>
+    <string name="share">分享</string>
+    <string name="share_to_winxin">分享到微信</string>
+    <string name="share_to_circle">分享到朋友圈</string>
+    <string name="share_to_qq">分享到QQ好友</string>
+    <string name="share_to_qzone">分享到QQ空间</string>
+    <string name="share_to_sina">分享到新浪微博</string>
+
+    <string name="share_to_weixin_friend">发给微信好友</string>
+    <string name="share_to_weixin_circle">发到微信朋友圈</string>
+    <string name="face_banknote_again">再测</string>
+    <string name="save_to_phone">保存到手机</string>
+    <string name="share_to_platform">分享到平台</string>
+
+    <string name="select_scene">选择你想要的广告场景</string>
+    <string name="recently_used">最近使用</string>
+    <string name="slogan">广告词</string>
+    <string name="trademark">商标</string>
+    <string name="custom">自定义</string>
+    <string name="custom_trademark">截取商标</string>
+    <string name="make_billboard">制作广告牌</string>
+    <string name="create">完成</string>
+
+    <string name="select_image_tip">请选择一张图片</string>
+
+    <string name="push">发布</string>
+    <string name="save">保存</string>
+    <string name="edit">编辑</string>
+    <string name="re_edit">重做</string>
+    <string name="font">字体</string>
+    <string name="color">颜色</string>
+    <string name="effect">效果</string>
+    <string name="align">对齐</string>
+    <string name="click_edit">点击此处编辑</string>
+    <string name="custom_edit">制作广告词</string>
+    <string name="load_sticker_failed">对不起，加载图片失败了</string>
+    <string name="compose_stickers_failed">对不起，生成图片失败了</string>
+    <string name="load_image_failed">对不起，加载图片失败了</string>
+    <string name="image">图片</string>
+    <string name="txt">文字</string>x
+    <string name="load_failed">加载失败</string>
+    <string name="push_success">恭喜您，已发布成功</string>
+    <string name="push_failed">抱歉，发布失败</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_failed">分享失败</string>
+    <string name="comment_success">评论成功</string>
+    <string name="comment_failed">评论失败</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_failed">删除失败</string>
+    <string name="deleted">此街拍已被删除</string>
+    <string name="deleted_is_confirm">确定删除此街拍？</string>
+    <string name="deleted_confirm">删除</string>
+
+    <string name="male">男</string>
+    <string name="female">女</string>
+
+    <string name="third_platform_oauth_failure">第三方平台登录失败</string>
+    <string name="login_failure">登录失败，请检查用户名和密码</string>
+    <string name="login_prompt">您还没有登录</string>
+
+    <string name="advertisement">我上广告</string>
+    <string name="community">街拍</string>
+    <string name="home_page">我的发布</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+
+    <string name="input_comment_hint">我来评论&#8230;</string>
+    <string name="decript">详情</string>
+    <string name="reply">回复：%1$s</string>
+
+    <string name="select_login_terrace">选择登录方式</string>
+    <string name="qq_login">QQ</string>
+    <string name="weibo_login">新浪微博</string>
+    <string name="weixin_login">微信</string>
+
+    <string name="font_example_text">Text&#160;&#160;&#160;Sample&#160;&#160;&#160;我代言字体示例</string>
+    <string name="font_example_hot_text">Text&#160;&#160;&#160;Sample&#160;&#160;&#160;说图字体示例</string>
+    <string name="feed_message">欢迎加入QQ交流群，群号347594097\n长按保存下面二维码，加入微信交流群</string>
+    <string name="save_image">保存图片</string>
+    <string name="is_save_image_message">确定保存图片吗？</string>
+    <string name="revert"> 重做前，是否保存该图片？</string>
+    <string name="confirm">确定</string>
+
+    <string name="select_hot_image">选图</string>
+    <string name="speak_hot_image">说图</string>
+    <string name="praise_hot_image">赞图</string>
+    <string name="finish_hot_image">天天说图</string>
+    <string name="endorsement_hot_image">我代言</string>
+    <string name="login_message">发布图片到社区需要先登录喔~</string>
+    <string name="login_message_praise">点赞请先登录喔~</string>
+    <string name="look">大家快来看</string>
+</resources>

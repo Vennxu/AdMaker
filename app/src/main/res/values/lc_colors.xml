@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="lcPrimaryColor">#FF31D0BA</color>
+    <color name="lcPrimaryColorLight">#FFC1EBE8</color>
+    <color name="lcColorGray">#FF959595</color>
+</resources>

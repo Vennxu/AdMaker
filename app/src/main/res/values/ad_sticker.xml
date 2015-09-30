@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="slogan_stickers" />
+
+    <array name="trademark_stickers" />
+
+    <!--  sample
+    <string-array name="sticker_sample">
+        sticker title
+        <item>sticker_sample</item>
+        sticker thumb path
+        <item>sticker_sample_thumb.jpg</item>
+        sticker image path
+        <item>sticker_sample</item>
+    </string-array>
+    -->
+
+    <!-- 广告语 -->
+
+    <!-- 商标 -->
+
+</resources>

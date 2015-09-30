@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ekuater.admaker.ui.widget.DrawableCenterTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_cirle"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:drawableTop="@drawable/ic_share_wxcircle"
+    android:gravity="center"
+    android:text="@string/share_to_weixin_circle"
+    android:textColor="@color/white"
+    android:textSize="16sp" />

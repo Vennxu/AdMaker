@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_ui_input_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="top"
+        android:background="@color/story_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/input_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chatting_ui_input_bar_edit_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/input_text_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xu huifu"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/input_edit"
+                        style="@style/ChatInputBarEditStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:minHeight="38dp"
+                        android:visibility="gone"
+                        android:textColor="@drawable/input_edit_text_hint_selector"/>
+
+                    <TextView
+                        android:id="@+id/input_edit_hint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="38dp"
+                        android:text="@string/input_comment_hint"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textColor="@drawable/input_edit_text_hint_selector"
+                        android:visibility="visible" />
+
+                </FrameLayout>
+
+                <ImageButton
+                    android:id="@+id/comment_ui_face_switch_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_input_face_selector"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/input_send_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center">
+
+            <com.ekuater.admaker.ui.widget.SendCommentButton
+                android:id="@+id/input_send_btn"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerInParent="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:background="@drawable/btn_send_comment"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

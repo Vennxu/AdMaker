@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="term_font">
+        <item>fzzdh.ttf</item>
+        <item>fzqkbys.ttf</item>
+        <item>hkwwt.ttf</item>
+    </string-array>
+
+    <string-array name="term_color">
+        <item>#ffffff</item>
+        <item>#712704</item>
+        <item>#04477c</item>
+        <item>#1291a9</item>
+        <item>#4499ee</item>
+        <item>#81c2f5</item>
+        <item>#72cfd7</item>
+        <item>#55a255</item>
+        <item>#fdd283</item>
+        <item>#74a474</item>
+        <item>#535353</item>
+        <item>#c5da01</item>
+        <item>#bec0c2</item>
+        <item>#96514d</item>
+        <item>#7a4171</item>
+        <item>#4f455c</item>
+        <item>#c9171e</item>
+        <item>#f6ad49</item>
+        <item>#fbca4d</item>
+        <item>#bb5548</item>
+    </string-array>
+
+    <array name="choose_image" />
+</resources>

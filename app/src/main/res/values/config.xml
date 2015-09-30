@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="mobile_length">11</integer>
+    <integer name="verify_code_length">4</integer>
+    <integer name="label_code_min_length">8</integer>
+    <integer name="label_code_max_length">15</integer>
+    <integer name="label_min_length">2</integer>
+    <integer name="label_max_length">12</integer>
+    <integer name="nickname_max_length">10</integer>
+    <integer name="friend_remark_max_length">20</integer>
+    <integer name="password_min_length">6</integer>
+    <integer name="password_max_length">20</integer>
+    <integer name="signature_max_length">15</integer>
+    <integer name="school_max_length">15</integer>
+
+    <integer name="verify_code_resend_delay">60</integer>
+
+    <integer name="temp_chat_msg_limit_count">3</integer>
+
+    <dimen name="normal_avatar_width">44dp</dimen>
+    <dimen name="normal_avatar_height">44dp</dimen>
+    <dimen name="large_avatar_width">50dp</dimen>
+    <dimen name="large_avatar_height">50dp</dimen>
+    <dimen name="huge_avatar_width">70dp</dimen>
+    <dimen name="huge_avatar_height">70dp</dimen>
+
+    <!-- for label show list config -->
+    <dimen name="label_show_item_center_offset">-30.5dp</dimen>
+    <dimen name="label_show_item_vertical_gap">6dp</dimen>
+
+    <dimen name="single_select_dialog_max_height">424dp</dimen>
+    <dimen name="region_select_dialog_max_height">414dp</dimen>
+
+    <dimen name="throw_photo_marker_max_width">100dp</dimen>
+    <dimen name="throw_photo_marker_max_height">100dp</dimen>
+
+    <dimen name="normal_title_height">50dp</dimen>
+
+    <integer name="confide_max_length">100</integer>
+</resources>

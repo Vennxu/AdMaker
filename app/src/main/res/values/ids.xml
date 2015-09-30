@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <item name="view_tag_first" type="id" />
+    <item name="view_tag_second" type="id" />
+
+    <item name="title_bar" type="id" />
+    <item name="title" type="id" />
+    <item name="icon" type="id" />
+    <item name="right_icon" type="id" />
+</resources>

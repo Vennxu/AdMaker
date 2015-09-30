@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/advertise_operation"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/actionBarStyle"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.ekuater.admaker.ui.widget.DrawableCenterTextView
+        android:id="@+id/save"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_keep_selector"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/save"
+        android:textColor="@drawable/operation_color_selector"
+        android:textSize="16sp" />
+
+    <com.ekuater.admaker.ui.widget.DrawableCenterTextView
+        android:id="@+id/share"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_share_selector"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/share"
+        android:textColor="@drawable/operation_color_selector"
+        android:textSize="16sp" />
+
+    <com.ekuater.admaker.ui.widget.DrawableCenterTextView
+        android:id="@+id/edit"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_restart_selector"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/re_edit"
+        android:textColor="@drawable/operation_color_selector"
+        android:textSize="16sp" />
+
+    <com.ekuater.admaker.ui.widget.DrawableCenterTextView
+        android:id="@+id/push"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_send_selector"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/push"
+        android:textColor="@drawable/operation_color_selector"
+        android:textSize="16sp" />
+
+</LinearLayout>

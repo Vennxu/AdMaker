@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/left_advertise_empty"
+    android:orientation="vertical">
+
+    <include layout="@layout/normal_title"/>
+
+    <RelativeLayout
+        android:id="@+id/cuter_image"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/cuter_image"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent" />-->
+        <cropper.CropSquareImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/crop_square_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            custom:imageResource="@drawable/welcome_android" />
+
+        <cropper.CropImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/crop_circle_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            custom:imageResource="@drawable/welcome_android" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/actionBarStyle">
+
+        <ImageView
+            android:id="@+id/cuter_circle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_cutclcrle_selector" />
+
+        <ImageView
+            android:id="@+id/cuter_revolve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_roat_selector" />
+
+        <ImageView
+            android:id="@+id/cuter_square"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_cutsquare_selector" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

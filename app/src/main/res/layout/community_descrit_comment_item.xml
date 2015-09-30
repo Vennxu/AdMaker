@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_item_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <com.ekuater.admaker.ui.widget.CircleImageView
+                android:id="@+id/comment_item_tx"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/contact_single" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/comment_item_tx"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/comment_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一直"
+                    android:textColor="@color/community_comment_name"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/comment_item_reply_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/comment_item_name"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="回复：“真的很不错，很棒，不错，很棒，很很不错！"
+                    android:textColor="@color/community_reply_comment"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/comment_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="2015-07-01"
+                    android:textColor="@color/community_comment_time"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/comment_item_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="还不错，还可以，真的还可以！还不错，还可以，真的还可以"
+            android:textColor="@color/community_comment_content"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

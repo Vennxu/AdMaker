@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="LCTheme" parent="android:Theme.Holo.Light">
+        <!--<item name="android:homeAsUpIndicator">@drawable/lc_ic_ab_back</item>-->
+        <!--<item name="android:homeAsUpIndicator">@drawable/empty_title_icon</item>-->
+        <item name="android:homeAsUpIndicator">@null</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <!--<item name="android:windowBackground">@drawable/background_main</item>-->
+
+        <item name="android:listChoiceIndicatorMultiple">@drawable/lc_btn_check</item>
+
+        <!-- Dialog attributes -->
+        <item name="android:dialogTheme">@style/LCTheme.Dialog</item>
+
+        <!-- Widget styles -->
+        <item name="android:checkboxStyle">@style/Widget.AppCompat.CompoundButton.CheckBox</item>
+        <item name="android:listPopupWindowStyle">@style/Widget.AppCompat.ListPopupWindow</item>
+
+        <item name="android:dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>
+
+        <item name="android:actionOverflowButtonStyle">
+            @style/Widget.AppCompat.ActionButton.Overflow
+        </item>
+        <item name="android:actionDropDownStyle">
+            @style/Widget.AppCompat.Spinner.DropDown.ActionBar
+        </item>
+        <item name="android:actionBarStyle">@style/Widget.AppCompat.ActionBar</item>
+        <item name="android:actionBarTabStyle">@style/Widget.AppCompat.ActionBar.TabView</item>
+        <item name="android:actionBarTabBarStyle">@style/Widget.AppCompat.ActionBar.TabBar</item>
+        <item name="android:actionBarTabTextStyle">@style/Widget.AppCompat.ActionBar.TabText</item>
+        <item name="android:actionBarSize">@dimen/normal_title_height</item>
+        <item name="android:actionMenuTextAppearance">
+            @style/TextAppearance.AppCompat.Widget.ActionBar.Menu
+        </item>
+        <item name="android:actionMenuTextColor">@color/lc_action_menu_text_color</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBarOverlay">false</item>
+
+        <!-- customer attrs -->
+        <item name="overflowMenuStyle">@style/Widget.AppCompat.OverflowMenu</item>
+
+        <!--for ActionBar-->
+        <item name="android:actionBarWidgetTheme">@style/LCTheme.ActionBar</item>
+    </style>
+
+    <style name="LCTheme.ActionBar" parent="android:Theme.Holo">
+        <item name="android:popupMenuStyle">@style/Widget.AppCompat.ActionBar.PopupMenu</item>
+    </style>
+
+    <style name="LCTheme.Dialog" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@drawable/lc_dialog_full</item>
+    </style>
+
+    <style name="Dialog" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@drawable/lc_dialog_full</item>
+    </style>
+
+    <style name="Letter" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@drawable/mail_bg</item>
+    </style>
+
+    <style name="LCTheme.Dialog.NoTitleBar" parent="LCTheme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="LCTheme.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/OverrideAnimation</item>
+    </style>
+
+    <style name="LCTheme.NoActionBar.Main" parent="LCTheme.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="SplashTheme" parent="LCTheme.NoActionBar">
+        <item name="android:windowBackground">@drawable/welcome_android</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="LCTheme.NoActionBar.Fullscreen" parent="LCTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="translucent" parent="AppBaseTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+    </style>
+
+    <style name="LCTheme.Dialog.NoTitle" parent="LCTheme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ShareDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--<item name="android:background"-->
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="OverrideAnimation" parent="@android:style/Animation.Activity" mce_bogus="1">
+        <item name="android:activityOpenEnterAnimation">@anim/side_enter_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/side_back_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/side_enter_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/side_back_left</item>
+    </style>
+
+</resources>

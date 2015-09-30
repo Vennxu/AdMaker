@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFEFEFEF"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="@string/share"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <include layout="@layout/dialog_horizontal_divider" />
+
+    <include layout="@layout/dialog_horizontal_divider" />
+
+    <LinearLayout
+        android:id="@+id/weixin_share"
+        style="@style/ShareItemStyle">
+
+        <Space style="@style/ShareItemLeftSpaceStyle" />
+
+        <ImageView
+            style="@style/ShareItemIconStyle"
+            android:src="@drawable/ic_share_weixin" />
+
+        <Space style="@style/ShareItemCenterSpaceStyle" />
+
+        <TextView
+            style="@style/ShareItemTextStyle"
+            android:text="@string/share_to_winxin" />
+
+        <Space style="@style/ShareItemRightSpaceStyle" />
+    </LinearLayout>
+
+    <include layout="@layout/dialog_horizontal_divider" />
+
+    <LinearLayout
+        android:id="@+id/circle_share"
+        style="@style/ShareItemStyle">
+
+        <Space style="@style/ShareItemLeftSpaceStyle" />
+
+        <ImageView
+            style="@style/ShareItemIconStyle"
+            android:src="@drawable/ic_share_wxcircle" />
+
+        <Space style="@style/ShareItemCenterSpaceStyle" />
+
+        <TextView
+            style="@style/ShareItemTextStyle"
+            android:text="@string/share_to_circle" />
+
+        <Space style="@style/ShareItemRightSpaceStyle" />
+    </LinearLayout>
+
+    <include layout="@layout/dialog_horizontal_divider" />
+
+    <LinearLayout
+        android:id="@+id/qq_share"
+        style="@style/ShareItemStyle">
+
+        <Space style="@style/ShareItemLeftSpaceStyle" />
+
+        <ImageView
+            style="@style/ShareItemIconStyle"
+            android:src="@drawable/ic_share_qq" />
+
+        <Space style="@style/ShareItemCenterSpaceStyle" />
+
+        <TextView
+            style="@style/ShareItemTextStyle"
+            android:text="@string/share_to_qq" />
+
+        <Space style="@style/ShareItemRightSpaceStyle" />
+    </LinearLayout>
+
+    <include layout="@layout/dialog_horizontal_divider" />
+
+    <LinearLayout
+        android:id="@+id/qzone_share"
+        style="@style/ShareItemStyle">
+
+        <Space style="@style/ShareItemLeftSpaceStyle" />
+
+        <ImageView
+            style="@style/ShareItemIconStyle"
+            android:src="@drawable/ic_share_qqzone" />
+
+        <Space style="@style/ShareItemCenterSpaceStyle" />
+
+        <TextView
+            style="@style/ShareItemTextStyle"
+            android:text="@string/share_to_qzone" />
+
+        <Space style="@style/ShareItemRightSpaceStyle" />
+    </LinearLayout>
+
+    <include layout="@layout/dialog_horizontal_divider" />
+
+    <LinearLayout
+        android:id="@+id/sina_share"
+        style="@style/ShareItemStyle">
+
+        <Space style="@style/ShareItemLeftSpaceStyle" />
+
+        <ImageView
+            style="@style/ShareItemIconStyle"
+            android:src="@drawable/ic_share_sina" />
+
+        <Space style="@style/ShareItemCenterSpaceStyle" />
+
+        <TextView
+            style="@style/ShareItemTextStyle"
+            android:text="@string/share_to_sina" />
+
+        <Space style="@style/ShareItemRightSpaceStyle" />
+    </LinearLayout>
+
+    <include layout="@layout/dialog_horizontal_divider" />
+
+    <include layout="@layout/dialog_horizontal_divider" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/lcPrimaryColor"
+        android:textSize="18sp" />
+</LinearLayout>

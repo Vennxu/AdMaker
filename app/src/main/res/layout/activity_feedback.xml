@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@id/title_bar"
+        layout="@layout/normal_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.ekuater.admaker.ui.widget.KeyboardStateView
+                android:id="@+id/input_keyboard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:id="@+id/feedback_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <EditText
+                    android:id="@+id/feedback_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/input_selector"
+                    android:ems="10"
+                    android:gravity="left|top"
+                    android:hint="@string/feedback_hint"
+                    android:maxLength="300"
+                    android:minHeight="160dp"
+                    android:textColorHint="@color/text_hint_color"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/feedback_message_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/input_normal"
+                    android:ems="10"
+                    android:gravity="left|top"
+                    android:text="@string/feedback_hint"
+                    android:maxLength="300"
+                    android:minHeight="160dp"
+                    android:textColor="@color/text_hint_color"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+                <TextView
+                    android:id="@+id/contact_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/feedback_message"
+                    android:layout_marginTop="15dp"
+                    android:gravity="left|top"
+                    android:text="@string/feedback_contact_tip"
+                    android:textColor="@color/text_hint_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/contact_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contact_tip"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/input_selector"
+                    android:gravity="left|top"
+                    android:maxLength="100"
+                    android:singleLine="true"
+                    android:textColorHint="@color/text_hint_color" />
+
+                <Button
+                    android:id="@+id/btn_feedback"
+                    style="@style/LargeButtonStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/contact_info"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/send_btn_selector"
+                    android:text="@string/feedback_submit" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/feedback_join"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feedback_area"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/feed_message"
+                android:textSize="16sp"
+                android:textColor="@color/text_hint_color"
+                android:lineSpacingExtra="3dp"/>
+
+            <ImageView
+                android:id="@+id/feedback_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/feedback_join"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

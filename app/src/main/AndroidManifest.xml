@@ -1,0 +1,177 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ekuater.admaker">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <application
+        android:name=".TheApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/LCTheme">
+
+        <!-- 友盟工具集成配置 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="@string/umeng_app_key" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${umengChannel}" />
+
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="${applicationId}.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/qq_sso_app_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 友盟工具集成配置 END -->
+
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.CropPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.SelectPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.ShowBigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.AdvertiseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.SceneFinishActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.CustomTextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.activity.InputCustomTextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".ui.activity.CuterImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.SelectLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBar" />
+        <activity
+            android:name=".ui.activity.MainActivityAdOnly"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.CommunityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.CommunityDescriptionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.activity.HomePageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.OperationAdvertiseActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".ui.activity.SelectHotImageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.MainHotImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBar" />
+
+        <activity
+            android:name=".ui.activity.PushHotissuesActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.CustomTextHotImageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <provider
+            android:name=".settings.SettingsProvider"
+            android:authorities="${applicationId}.settings"
+            android:exported="false" />
+    </application>
+</manifest>

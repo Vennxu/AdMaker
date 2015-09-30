@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weixin_app_id" translatable="false">wx49396f60cb6164c6</string>
+    <string name="weixin_app_secret" translatable="false">56288c7f34dda338308e660cbae30d29</string>
+
+    <string name="qq_sso_app_id" translatable="false">1104713524</string>
+    <string name="qq_sso_app_key" translatable="false">Wt2WT56A3Dl2eVcp</string>
+    <string name="qq_sso_app_scheme" translatable="false">tencent1104713524</string>
+
+    <string name="common_share_content">标签内容分享，http://www.ekuater.com</string>
+</resources>

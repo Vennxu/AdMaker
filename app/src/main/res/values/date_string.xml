@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="yesterday_befor">前天</string>
+    <string name="before_dawn">凌晨</string>
+    <string name="forenoon">上午</string>
+    <string name="afternoon">下午</string>
+    <string name="evening">晚上</string>
+    <string name="day_befor">天前</string>
+    <string name="hour_befor">小时前</string>
+    <string name="minute_befor">分钟前</string>
+    <string name="now_befor">刚刚</string>
+
+    <string-array name="week_days">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+</resources>

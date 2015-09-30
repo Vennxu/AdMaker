@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/advertise_rippleview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    ripple:rv_centered="true"
+    ripple:rv_rippleDuration="300">
+
+    <LinearLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/advertise_custom_image"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="4dp"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+</com.andexert.library.RippleView>

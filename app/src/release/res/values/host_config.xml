@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="config_http_api_base_url" translatable="false">http://121.40.136.110:7789</string>
+    <string name="config_image_base_url" translatable="false">http://7xjsdh.com1.z0.glb.clouddn.com</string>
+    <string name="umeng_app_key" translatable="false">5571430667e58e8ecd001461</string>
+</resources>

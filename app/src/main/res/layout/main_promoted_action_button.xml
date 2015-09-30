@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:layout_gravity="bottom|right"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="90px"
+    android:visibility="visible"
+    android:background="@drawable/btn_menu_action">
+
+</ImageButton>
